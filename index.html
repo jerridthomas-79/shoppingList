@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Shopping List</title>
+</head>
+<body>
+    <h1>Shopping List</h1>
+    <form id="addItemForm">
+        <input type="text" id="item" placeholder="Item" required />
+        <select id="where" required>
+            <option value="Fareway">Fareway</option>
+            <option value="Hy-Vee">Hy-Vee</option>
+            <option value="Wal-Mart">Wal-Mart</option>
+            <option value="Target">Target</option>
+            <option value="Costco">Costco</option>
+        </select>
+        <input type="number" id="quantity" placeholder="Quantity" min="1" required />
+        <button type="submit">Add Item</button>
+    </form>
+    <table id="shoppingListTable">
+        <thead>
+            <tr>
+                <th>Item</th>
+                <th>Where</th>
+                <th>Quantity</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+    <button id="downloadCsv">Download CSV</button>
+    <p id="notice"></p>
+    <script src="app.js"></script>
+</body>
+</html>
